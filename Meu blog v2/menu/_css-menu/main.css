@@ -1,0 +1,133 @@
+/* Clock */
+
+/* .container-clock {
+    margin: 5%;
+} */
+
+/* Main-Card */
+
+.main-text {
+    margin: 30px 3%;
+    text-align: justify;
+}
+
+.articles {
+    margin: 5% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.main-card {
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 1fr 2fr;
+    width: 60%;
+    height: 20rem;
+    align-self: center;
+    padding: 2% 5% 2% 5%;
+    border: 8px solid rgb(9, 9, 9);
+    box-shadow: 0px 0px 20px 15px #000;
+}
+
+.card-container-img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    /* border: solid black 5px; */
+    background-image: url(/imagens/_imgs-jogos/zombie_menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 8%;
+}
+
+.card-img {
+    display: none;
+}
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+    /* font-size: xx-large; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.card-paragraph {
+    grid-row-start: 2;
+    font-size: larger;
+    margin: 0% 0% 0% 0%;
+    border: solid black 2px;
+    padding: 0.5em;
+}
+
+.ctitle-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ctitle-link:hover {
+    text-decoration: underline;
+}
+
+.main-card {
+    background-color: var(--back-mainCard);
+}
+
+.card-paragraph {
+    background-color: var(--back-card-p);
+    color: white;
+}
+
+.background {
+    margin: 0;
+    opacity: 20%;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    min-width: 10rem;
+    height: 100%;
+}
+
+@media only screen and (max-width: 888px) and (min-width: 580px) {
+    .main-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        height: 450px;
+    }
+
+    .card-container-img {
+        height: 100%;
+        width: 100%;
+        margin-left: -1%;
+    }
+}
+
+@media only screen and (max-width: 579px) {
+    .main-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        height: 450px;
+        padding: 3% 0 0 0;
+        border: none;
+    }
+
+    .card-container-img {
+        height: 100%;
+        width: 100%;
+        margin-left: -1%;
+        margin: 1%;
+    }
+
+    .card-paragraph {
+        margin: 3%;
+    }
+
+}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import url(/arquivos-padrão/header.css);
+@import url(/arquivos-padrão/footer.css);
+@import url(/arquivos-padrão/default-card.css);
+@import url(/arquivos-padrão/clock.css);
+@import url(/arquivos-padrão/dropdown-menu.css);
+@import url(/arquivos-padrão/contact-forms.css);
+
+/*
+@import url(/template.css);
+@import url(main.css); 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background-color: var(--back-body);
+}
+
+:root {
+    --back-body: #111522;
+    --back-Cclock: #050f1a;
+    --back-clock: #2f363e;
+    --back-clock-bef: #2f363e;
+    --back-contForm: #1D1A44;
+    --back-defaultCard: #050f1a;
+    --back-nav: #0d0f17;
+    --back-nav-mT-bef: #555;
+    --back-nav-mT-aft: #555;
+    --back-footer: #2f363e;
+    --back-header: #0d0f17;
+    --back-searchF-btn-hov: #2005d2;
+    --back-mainCard: #13192b;
+    --back-card-p: #1b1a2a;
+    --back-LAT-main-li: rgba(0, 0, 0, 0.5);
+    --back-AtC-card: #13192b;
+    --back--AtC-abt-game: #1c1a37;
+    --white: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    main {
+        margin-top: 85px !important;
+    }
+}

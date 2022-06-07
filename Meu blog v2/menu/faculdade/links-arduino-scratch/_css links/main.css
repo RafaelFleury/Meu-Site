@@ -1,0 +1,36 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+    justify-content: center;
+    gap: 6rem;
+    color: white;
+}
+
+main h2 {
+    font-size: 25pt;
+}
+
+main li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 25px;
+    padding: 5%;
+    background-color: var(--back-LAT-main-li);
+}
+
+main ol {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media only screen and (max-width: 700px) {
+    iframe {
+        width: 100%;
+    }
+}
