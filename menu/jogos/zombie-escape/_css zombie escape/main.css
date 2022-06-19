@@ -1,0 +1,73 @@
+#Video-ZombieEscape {
+    display: flex;
+    justify-content: center;
+}
+
+.articles {
+    margin: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card {
+    width: 90%;
+    height: 40rem;
+    align-self: center;
+    padding: 2% 2%;
+    border: 8px solid rgb(9, 9, 9);
+    box-shadow: 0px 0px 20px 15px #000000;
+    background-color: #13192b;
+}
+
+.About-game {
+    text-align: justify;
+    border: solid black 2px;
+    background-color: #1c1a37; 
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.About-game p {
+    font-size: x-large;
+}
+
+.About-game h2 {
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 940px) and (min-width: 621px) { 
+    /* .card {
+        width: 99%;
+    } */
+
+    .articles {
+        margin: 5% 1%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+
+    .card {
+        height: 25rem;
+    } 
+    .articles {
+        margin: 5% 1%;
+    }
+
+    .About-game p {
+        font-size: large;
+    }
+    
+    .About-game h2 {
+        font-size: x-large;
+    }
+
+    #Video-ZombieEscape iframe {
+        width: 100%;
+        height: 500px;
+    }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css sobre-mim/sobre-mim.css">
+    <script src="/arquivos-padrão/apis/contact-form.js" defer></script>
+    <script src="/arquivos-padrão/pesquisa.js" defer></script>
+    <script src="/menu/testes/_js-testes/script.js" defer></script>
+    <title>Rafael's</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="container-header">
+            <div class="menu-row-1">
+                <div class="menu-1-div" id="Sobre-Novidades"> <span><a href="/menu/sobre-mim/sobre-mim.html">Sobre
+                            Mim</a></span>
+                    <div id="S-N-division"></div> <span id="Novidades"><a
+                            href="/menu/novidades/novidades.html">Novidades</a></span>
+                </div>
+
+                <div class="menu-1-div">
+                    <h1 id="Title-Page"><a href="/index.html">Rafael Fleury</a></h1>
+                </div>
+
+                <div class="menu-1-div">
+                    <form class="search-form">
+                        <fieldset class="search-fieldset">
+                            <input type="text" placeholder="Search" name="search" class="input-search">
+                            <button type="button" title="search-box" class="search-btn"><i class="search"></i></button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <div class="menu-row-2">
+                <nav class="nav-menu">
+                    <p><a href="/menu/historias/historias.html">Histórias</a></p>
+                    <p><a href="/menu/jogos/jogos.html">Jogos</a></p>
+                    <p><a href="/menu/todos-os-projetos/Tprojetos.html">Todos os Projetos</a></p>
+                    <p><a href="/menu/melhores-projetos/melhores-projetos.html">Melhores Projetos</a></p>
+                    <p><a href="/menu/faculdade/faculdade.html">Faculdade</a></p>
+                </nav>
+            </div>
+        </section>
+
+        <div class="dropdown-menu">
+            <div class="navigation">
+                <div class="userBx">
+                    <div class="imgBx">
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </div>
+                    <p class="username"> Rafael Fleury</p>
+                </div>
+                <div class="menuToggle"></div>
+                <ul class="menu">
+                    <li><a href="/index.html">
+                        <ion-icon name="cafe-outline"></ion-icon> Página Principal
+                    </a></li>
+                    <li><a href="/menu/sobre-mim/sobre-mim.html">
+                        <ion-icon name="clipboard-outline"></ion-icon> Sobre Mim
+                        </a></li>
+                    <li><a href="/menu/melhores-projetos/melhores-projetos.html">
+                        <ion-icon name="diamond-outline"></ion-icon> Melhores Projetos
+                        </a></li>
+                    <li><a href="/menu/novidades/novidades.html">
+                        <ion-icon name="megaphone-outline"></ion-icon> Novidades
+                        </a></li>
+                    <li><a href="/menu/jogos/jogos.html">
+                        <ion-icon name="game-controller-outline"></ion-icon> Jogos
+                        </a></li>
+                    <li><a href="/menu/historias/historias.html">
+                        <ion-icon name="book-outline"></ion-icon> Histórias
+                        </a></li>
+                    <li><a href="/menu/todos-os-projetos/Tprojetos.html">
+                        <ion-icon name="globe-outline"></ion-icon> Todos os Projetos
+                        </a></li>
+                    <li><a href="/menu/faculdade/faculdade.html">
+                        <ion-icon name="school-outline"></ion-icon>Faculdade
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="Sobre">
+            <h2>Informações Para Contato</h2>
+            <br>
+            <p><strong>Email profissional:</strong> rafaelfbcol@gmail.com</p>
+            <p><strong>Instagram:</strong> <a class="contato_links" href="https://www.instagram.com/rafaelfleury_00/">@rafaelfleury_00</a></p>
+            <p><strong>Currículo Acadêmico Lattes:</strong> <a class="link-hover contato_links"
+                    href="http://lattes.cnpq.br/0818275365059265" target="_blank">Clique aqui.</a></p>
+            <br>
+            <hr>
+            <br>
+            <h2>Proposta do Site</h2>
+            <br>
+            <p>Este site tem a função de armazenar todos projetos que eu concluir ao longo da faculdade. Outros projetos
+                não relacionados também podem aparecer dentro do site, mas não serão o foco. É basicamente um blog.</p>
+        </section>
+
+        <form action="https://api.staticforms.xyz/submit" method="post" target="_blank" id="contact-form">
+            <!-- action: te envia para algum lugar; method: protocolo http (recomendado ver as definições na internet) -->
+    
+            <fieldset class="contact-fieldset">
+                <!-- campo do formulário -->
+                <legend><h3>Contato</h3></legend> <!-- titulo de fieldset-->
+                <div>
+                    <label for="name"><span class="sr-only">Nome:</span></label>
+                    <!-- etiqueta para input; o "for" aponta pro id do input desejado-->
+                    <input class="contact-inputs" type="text" id="name" name="name" autocomplete="none" placeholder="Rafael">
+                    <!-- campo de preenchimento da informação; atributo "name" é para acessibilidade -->
+                </div>
+                <div>
+                    <label for="email"><span class="sr-only">Email:</span></label>
+                    <input class="contact-inputs" type="email" id="email" name="email" placeholder="seuemail@dominio">
+                </div>
+                <div>
+                    <label for="phone"><span class="sr-only">Telefone:</span></label>
+                    <input class="contact-inputs" type="tel" id="phone" name="phone" placeholder="+55 (XX) 0000-0000">
+                </div>
+    
+                <div class="message-div">
+                    <label for="message"><span class="sr-only">Mensagem:</span></label>
+                    <textarea type="tel" id="message" name="message" rows="5" cols="50" placeholder="Olá Mundo!"></textarea>
+                </div>
+                <input class="contact-inputs" type="hidden" name="accessKey" value="1e44f3e8-e615-4508-8f98-709e6878d435">
+                <div class="btn-container"><button type="submit" id="btn-form" disabled>Enviar</button></div>
+            </fieldset>
+        </form>
+
+        <div class="container-clock">
+            <div class="clock">
+
+                <div class="circle" id="sc" style="--clr:#04fc43;"><i></i></div>
+                <div class="circle circle2" id="mn" style="--clr:#fee800;"><i></i></div>
+                <div class="circle circle3" id="hr" style="--clr:#ff2972;"><i></i></div>
+
+                <span style="--i:1;"><b>1<b></span>
+                <span style="--i:2;"><b>2<b></span>
+                <span style="--i:3;"><b>3<b></span>
+                <span style="--i:4;"><b>4<b></span>
+                <span style="--i:5;"><b>5<b></span>
+                <span style="--i:6;"><b>6<b></span>
+                <span style="--i:7;"><b>7<b></span>
+                <span style="--i:8;"><b>8<b></span>
+                <span style="--i:9;"><b>9<b></span>
+                <span style="--i:10;"><b>10<b></span>
+                <span style="--i:11;"><b>11<b></span>
+                <span style="--i:12;"><b>12<b></span>
+            </div>
+        </div>
+
+        <script>
+            let hr = document.querySelector('#hr');
+            let mn = document.querySelector('#mn');
+            let sc = document.querySelector('#sc');
+
+            setInterval(() => {
+                let day = new Date();
+                let hh = day.getHours() * 30;
+                let mm = day.getMinutes() * 6;
+                let ss = day.getSeconds() * 6;
+
+                hr.style.transform = `rotateZ(${hh + (mm / 12)}deg)`;
+                mn.style.transform = `rotateZ(${mm}deg)`;
+                sc.style.transform = `rotateZ(${ss}deg)`;
+
+            })
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let menuToggle = document.querySelector('.menuToggle');
+            let navigation = document.querySelector('.navigation');
+
+            menuToggle.onclick = function () {
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p id="Copyright">&copy Rafael Fleury</p> <div id="footer-pages"><span><a href="/menu/sobre-mim/sobre-mim.html">Sobre</a></span> <span><a href="/menu/testes/testes.html">Opções de Desenvolvimento</a></span></div>
+    </footer>
+</body>
+
+</html>

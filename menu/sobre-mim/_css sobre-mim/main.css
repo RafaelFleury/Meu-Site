@@ -1,0 +1,25 @@
+main {
+    margin: 4%;
+}
+
+.Sobre {
+    background-color: #1d1a44; 
+    padding: 3%;
+    color: white;
+}
+
+.Sobre h2 {
+    color: rgb(124, 116, 116);
+}
+
+.contact-fieldset {
+    border: none;
+}
+
+.contato_links {
+    color: red;
+}
+
+.link-hover:hover::after {
+    content: " (https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=6DE91FBA8768F92EFBC872EB40B321DD#)";
+}

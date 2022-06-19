@@ -1,0 +1,149 @@
+.dropdown-menu {
+    display: none;
+}
+
+.header {
+    background-color: var(--back-header);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-row-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 1% 1% 1%;
+    border-bottom: solid 1px;
+}
+
+
+#Sobre-Novidades {
+    display: flex;
+    align-items: center;
+}
+
+#Sobre-Novidades a {
+    text-decoration: none;
+    color: white;
+}
+
+#Sobre-Novidades a:hover {
+    color: #2005d2;
+}
+
+#S-N-division {
+    border: solid 1px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Title-Page {
+    font-size: 2.5rem;
+    background-image: linear-gradient(to right, rgb(8, 8, 128), rgb(6, 97, 172), rgb(6, 112, 193));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form.search-form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.search-fieldset {
+    border: none;
+    display: flex;
+}
+
+form.search-form input[type=text] {
+    padding: 5%;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 25px 0px 0px 25px;
+}
+
+form.search-form button {
+    width: 20%;
+    padding: 5%;
+    background: rgba(8, 8, 128, 0.742);
+    color: white;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+    border-radius: 0px 25px 25px 0px;
+    background-image: url(/imagens/_imgs-menu/icone-loupe-noir.png);
+    background-size: 50%;
+    background-position-y: 50%;
+    background-position-x: 40%;
+    background-repeat: no-repeat;
+}
+
+form.search-form button:hover {
+    background-color: var(--back-searchF-btn-hov);
+}
+
+.menu-row-2 {
+    border-bottom: solid 1px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5%;
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, rgb(255, 17, 0), rgb(251, 155, 0), rgb(255, 247, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-menu a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .container-header {
+        display: none;
+    }
+
+    header {
+        margin-bottom: 70px;
+    }
+
+    .dropdown-menu {
+        display: initial;
+    }
+    /* .nav-menu p:nth-child(1), .nav-menu p:nth-child(2) {
+        display: none;
+    }
+
+    #S-N-division {
+        display: none;
+    }
+
+    #Novidades {
+        display: none;
+    }
+
+    .menu-1-div:nth-child(3) {
+        display: none;
+    }
+
+    #Sobre-Novidades {
+        font-size: 140%;
+    }
+
+    .menu-row-1 {
+        margin: 1%;
+        display: flex;
+        flex-direction: row-reverse;
+    } */
+}

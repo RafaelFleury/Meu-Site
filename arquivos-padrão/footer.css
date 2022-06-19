@@ -1,0 +1,39 @@
+footer {
+    background-color: var(--back-footer);
+    /* margin-top: 3%; */
+    color: black;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#Copyright {
+    font-size: x-large;
+    margin-bottom: 2%;
+}
+
+#footer-pages {
+    display: flex;
+}
+
+#footer-pages span {
+    margin-right: 5%;
+}
+
+#footer-pages span a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-pages span a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    #Copyright {
+        font-size: larger;
+        margin-bottom: 2%;
+    }  
+}

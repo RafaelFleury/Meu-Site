@@ -1,0 +1,51 @@
+#contact-form {
+    padding: 1%;
+    margin-top: 15px;
+    background-color: var(--back-contForm);
+    color: white;
+}
+
+.fieldset {
+    border: none;
+}
+
+.fieldset div label {
+    cursor: pointer;
+    color: white;
+}
+
+.fieldset legend {
+    color: white;
+    font-size: larger;
+}
+
+.fieldset div{
+    padding-top: 1%;
+}
+
+.btn-container {
+    padding-top: 5%;
+}
+
+@media only screen and (max-width: 500px) {   
+    #message {
+        width: 250px;
+    }
+}
+
+/* para dxar apenas leitura para acessibilidade */
+/* .sr-only {
+    display: none;
+} */
+
+.borda-vermelha {
+    border-color: red;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(128, 128, 128, 0.842);
+}
+
+.message-div span{
+    display: block;
+}

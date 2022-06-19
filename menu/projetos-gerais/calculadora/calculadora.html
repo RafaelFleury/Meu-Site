@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links externos para calculadora avançada -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- / -->
+
+    <link rel="stylesheet" href="_css-calculadora/calculadora.css">
+    <script src="/menu/projetos-gerais/calculadora/_js-calculadora/script.js"></script>
+    <script src="/arquivos-padrão/apis/numbers-facts.js" defer></script>
+    <script src="/menu/testes/_js-testes/script.js" defer></script>
+    <script src="/arquivos-padrão/pesquisa.js" defer></script>
+    <title>Rafael's</title>
+
+</head>
+
+<body onload="getFactFetch()">
+    <header class="header">
+        <section class="container-header">
+            <div class="menu-row-1">
+                <div class="menu-1-div" id="Sobre-Novidades"> <span><a href="/menu/sobre-mim/sobre-mim.html">Sobre
+                            Mim</a></span>
+                    <div id="S-N-division"></div> <span id="Novidades"><a
+                            href="/menu/novidades/novidades.html">Novidades</a></span>
+                </div>
+
+                <div class="menu-1-div">
+                    <h1 id="Title-Page"><a href="/index.html">Rafael Fleury</a></h1>
+                </div>
+
+                <div class="menu-1-div">
+                    <form class="search-form">
+                        <fieldset class="search-fieldset">
+                            <input type="text" placeholder="Search" name="search" class="input-search">
+                            <button type="button" title="search-box" class="search-btn"><i class="search"></i></button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <div class="menu-row-2">
+                <nav class="nav-menu">
+                    <p><a href="/menu/historias/historias.html">Histórias</a></p>
+                    <p><a href="/menu/jogos/jogos.html">Jogos</a></p>
+                    <p><a href="/menu/todos-os-projetos/Tprojetos.html">Todos os Projetos</a></p>
+                    <p><a href="/menu/melhores-projetos/melhores-projetos.html">Melhores Projetos</a></p>
+                    <p><a href="/menu/faculdade/faculdade.html">Faculdade</a></p>
+                </nav>
+            </div>
+        </section>
+
+        <div class="dropdown-menu">
+            <div class="navigation">
+                <div class="userBx">
+                    <div class="imgBx">
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </div>
+                    <p class="username"> Rafael Fleury</p>
+                </div>
+                <div class="menuToggle"></div>
+                <ul class="menu">
+                    <li><a href="/index.html">
+                            <ion-icon name="cafe-outline"></ion-icon> Página Principal
+                        </a></li>
+                    <li><a href="/menu/sobre-mim/sobre-mim.html">
+                            <ion-icon name="clipboard-outline"></ion-icon> Sobre Mim
+                        </a></li>
+                    <li><a href="/menu/melhores-projetos/melhores-projetos.html">
+                            <ion-icon name="diamond-outline"></ion-icon> Melhores Projetos
+                        </a></li>
+                    <li><a href="/menu/novidades/novidades.html">
+                            <ion-icon name="megaphone-outline"></ion-icon> Novidades
+                        </a></li>
+                    <li><a href="/menu/jogos/jogos.html">
+                            <ion-icon name="game-controller-outline"></ion-icon> Jogos
+                        </a></li>
+                    <li><a href="/menu/historias/historias.html">
+                            <ion-icon name="book-outline"></ion-icon> Histórias
+                        </a></li>
+                    <li><a href="/menu/todos-os-projetos/Tprojetos.html">
+                            <ion-icon name="globe-outline"></ion-icon> Todos os Projetos
+                        </a></li>
+                    <li><a href="/menu/faculdade/faculdade.html">
+                            <ion-icon name="school-outline"></ion-icon>Faculdade
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 style="margin: 5%; color:red;">Página ainda em manutenção!</h1>
+
+        <!-- FATOS ALEATÓRIOS FEITOS COM API -->
+        <!-- https://github.com/lizymac/Random-facts -->
+        <div id="number-fact" class="card-body">
+            <strong>
+                <span>Fato aleatório:</span> <h1 id="number-factText" class="card-text"></h1>
+            </strong>
+        </div>
+
+        <div class="container">
+            <h1>Calculadora</h1>
+            <div id="calculadora" class="card">
+                <div class="card-header">
+                    <p id="display" class="m-1">0</p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <button id="bt-7" type="button" class="btn button-text">7</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-8" type="button" class="btn button-text">8</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-9" type="button" class="btn button-text">9</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-divide" type="button" class="btn btn-warning button-text">
+                                <i class="fa fa-divide"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button id="bt-4" type="button" class="btn button-text">4</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-5" type="button" class="btn button-text">5</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-6" type="button" class="btn button-text">6</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-times" type="button" class="btn btn-warning button-text">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button id="bt-1" type="button" class="btn button-text">1</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-2" type="button" class="btn button-text">2</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-3" type="button" class="btn button-text">3</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-minus" type="button" class="btn btn-warning button-text">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row row-2">
+                        <div id="zero">
+                            <div class="col" id="div-bt-0">
+                                <button id="bt-0" type="button" class="btn button-text">0</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button id="bt-comma" type="button" class="btn button-text">,</button>
+                        </div>
+                        <div class="col">
+                            <button id="bt-plus" type="button" class="btn btn-warning button-text">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row row-3">
+                        <div class="col col-3 " id="div-bt-ac">
+                            <button id="bt-ac" type="button" class="btn btn-secondary button-text">AC</button>
+                        </div>
+                        <div class="col col-3">
+                            <button id="bt-equals" type="button" class="btn btn-warning button-text">
+                                <i class="fa fa-equals"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculadora básica -->
+
+        <section id="basic">
+            <div class="calculadora">
+                <div class="titulo-calc">
+                    <h1 class="calculadora">Somando Valores</h1>
+                </div>
+                <div class="calculadora-1">
+                    <input type="number" name="txtn1" id="txtn1"> +
+                    <input type="number" name="txtn2" id="txtn2">
+                    <input type="button" value="Somar" onclick="somar()">
+                    <div id="res" class="resultado">Resultado</div>
+                </div>
+            </div>
+            <div class="calculadora">
+                <div class="titulo-calc">
+                    <h1 class="calculadora">Subtraindo Valores</h1>
+                </div>
+                <div class="calculadora-1">
+                    <input type="number" name="txtn1" id="txtn1-2"> -
+                    <input type="number" name="txtn2" id="txtn2-2">
+                    <input type="button" value="Subtrair" onclick="subtrair()">
+                    <div id="res2" class="resultado">Resultado</div>
+                </div>
+            </div>
+            <div class="calculadora">
+                <div class="titulo-calc">
+                    <h1 class="calculadora">Multiplicando Valores</h1>
+                </div>
+                <div class="calculadora-1">
+                    <input type="number" name="txtn1" id="txtn1-3"> X
+                    <input type="number" name="txtn2" id="txtn2-3">
+                    <input type="button" value="Multiplicação" onclick="multiplicar()">
+                    <div id="res3" class="resultado">Resultado</div>
+                </div>
+            </div>
+            <div class="calculadora">
+                <div class="titulo-calc">
+                    <h1 class="calculadora">Dividindo Valores</h1>
+                </div>
+                <div class="calculadora-1">
+                    <input type="number" name="txtn1" id="txtn1-4"> /
+                    <input type="number" name="txtn2" id="txtn2-4">
+                    <input type="button" value="Multiplicação" onclick="dividir()">
+                    <div id="res4" class="resultado">Resultado</div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function somar() {
+                var tn1 = window.document.getElementById('txtn1')
+                var tn2 = window.document.querySelector('input#txtn2')
+                var res = window.document.getElementById('res')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var s = n1 + n2
+                res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+            }
+
+            function subtrair() {
+                var tn1 = window.document.getElementById('txtn1-2')
+                var tn2 = window.document.querySelector('input#txtn2-2')
+                var res = window.document.getElementById('res2')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var s = n1 - n2
+                res.innerHTML = `A subtração entre ${n1} e ${n2} é igual a ${s}`
+            }
+
+            function multiplicar() {
+                var tn1 = window.document.getElementById('txtn1-3')
+                var tn2 = window.document.querySelector('input#txtn2-3')
+                var res = window.document.getElementById('res3')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var s = n1 * n2
+                res.innerHTML = `A mutiplicação entre ${n1} e ${n2} é igual a ${s}`
+            }
+
+            function dividir() {
+                var tn1 = window.document.getElementById('txtn1-4')
+                var tn2 = window.document.querySelector('input#txtn2-4')
+                var res = window.document.getElementById('res4')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var s = n1 / n2
+                res.innerHTML = `A divisão entre ${n1} e ${n2} é igual a ${s}`
+            }
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let menuToggle = document.querySelector('.menuToggle');
+            let navigation = document.querySelector('.navigation');
+
+            menuToggle.onclick = function () {
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p id="Copyright">&copy Rafael Fleury</p> <div id="footer-pages"><span><a href="/menu/sobre-mim/sobre-mim.html">Sobre</a></span> <span><a href="/menu/testes/testes.html">Opções de Desenvolvimento</a></span></div>
+    </footer>
+</body>
+
+</html>
